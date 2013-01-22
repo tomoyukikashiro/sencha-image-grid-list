@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Sencha-image-grid-list :  grid component to display some images by using sencha touch 2" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sencha-image-grid-list</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/kashiro/sencha-image-grid-list">View on GitHub</a>
+
+          <h1 id="project_title">Sencha-image-grid-list</h1>
+          <h2 id="project_tagline"> grid component to display some images by using sencha touch 2</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/kashiro/sencha-image-grid-list/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/kashiro/sencha-image-grid-list/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>sencha-image-grid-list</h1>
+
+<h2>Outline</h2>
+
+<p>This is grid component to show some images.</p>
+
+<h2>Function</h2>
+
+<h3>gird display</h3>
+
+<p>The image display in a grid pattern.</p>
+
+<h3>selectable</h3>
+
+<p>The images can be selected.</p>
+
+<h2>Image</h2>
+
+<p><img src="https://pbs.twimg.com/media/BBL40gFCUAAKUX8.png:large" alt="screenshot"></p>
+
+<h2>Demo</h2>
+
+<p>check <a href="http://kashiro.github.com/sencha-image-grid-list/">here</a></p>
+
+<h2>How to use</h2>
+
+<ol>
+<li>
+<p>copy some resources</p>
+
+<blockquote>
+<ul>
+<li>ux folder to aplication root</li>
+<li>resources/sass/_image-grid-list.scss to sass directory and import it in your app.scss</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>add class path to your application</p>
+
+<blockquote>
+<p>check <a href="http://scriptogr.am/tkashiro/post/how-to-use-senchatouch-custom-components">here</a>. </p>
+</blockquote>
+</li>
+<li>
+<p>define model</p>
+
+<blockquote>
+<p>Define Ext.data.Model in your application extend Ext.ux.ImageGridList.model.Image.</p>
+
+<pre><code>Ext.define('ImageGridList.model.Image', {
+
+  requires: [
+      'Ext.ux.ImageGridList.model.Image'
+  ],
+
+   extend: 'Ext.ux.ImageGridList.model.Image',
+
+   config: {
+</code></pre>
+</blockquote>
+</li>
+<li>
+<p>define store</p>
+
+<blockquote>
+<p>Define Ext.data.Store contain model property extend Ext.ux.ImageGridList.model.Image.</p>
+
+<pre><code>   config: {
+       model: 'ImageGridList.model.Image' // extend Ext.ux.ImageGridList.model.Image.
+   }
+</code></pre>
+</blockquote>
+</li>
+</ol><h2>Licence</h2>
+
+<p>The MIT License</p>
+
+<p>Copyright (c) 2013 Tomoyuki Kashiro <a href="mailto:kashiro@github">kashiro@github</a></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Sencha-image-grid-list maintained by <a href="https://github.com/kashiro">kashiro</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
