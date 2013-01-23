@@ -16,8 +16,8 @@
 				right: 0;
 				width: 22px;
 				height: 22px;
-				@include background-size(contain);
 				background: inline-image('checked.png') no-repeat center center;
+				@include background-size(contain);
 			}
 		}
 	}
