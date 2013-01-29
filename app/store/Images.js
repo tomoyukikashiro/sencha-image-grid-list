@@ -1,7 +1,7 @@
 /**
  * @class ImageGridList.store.Images
  * @extends Ext.data.Store
- * Description image store to display Ext.ux.ImageGridList
+ * Description image store to display Ext.ux.touch.ImageGridList
  */
 Ext.define('ImageGridList.store.Images', {
 

@@ -34,26 +34,26 @@ check [here](http://kashiro.github.com/sencha-image-grid-list/)
 	> check [here](http://scriptogr.am/tkashiro/post/how-to-use-senchatouch-custom-components). 
 
 3. define model
-	> Define Ext.data.Model in your application extend Ext.ux.ImageGridList.model.Image.
+	> Define Ext.data.Model in your application extend Ext.ux.touch.ImageGridList.model.Image.
 
 	> ```
 	> Ext.define('ImageGridList.model.Image', {
 	>
 	>	requires: [
-	>		'Ext.ux.ImageGridList.model.Image'
+	>		'Ext.ux.touch.ImageGridList.model.Image'
 	>	],
 	>
-	>    extend: 'Ext.ux.ImageGridList.model.Image',
+	>    extend: 'Ext.ux.touch.ImageGridList.model.Image',
 	>    
 	>    config: {
 	>```
 
 4. define store
-	> Define Ext.data.Store contain model property extend Ext.ux.ImageGridList.model.Image.
+	> Define Ext.data.Store contain model property extend Ext.ux.touch.ImageGridList.model.Image.
 
 	> ```
 	>    config: {
-	>        model: 'ImageGridList.model.Image' // extend Ext.ux.ImageGridList.model.Image.
+	>        model: 'ImageGridList.model.Image' // extend Ext.ux.touch.ImageGridList.model.Image.
 	>    }
 	> ```
 

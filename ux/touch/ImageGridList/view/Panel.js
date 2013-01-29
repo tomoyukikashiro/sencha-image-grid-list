@@ -1,13 +1,15 @@
 /**
- * main component of Ext.ux.ImageGridList
+ * main component of Ext.ux.touch.ImageGridList
  *
- * @class Ext.ux.ImageGridList.view.Panel
+ * @class Ext.ux.touch.ImageGridList.view.Panel
  * @extend Ext.Panel
+ * @version 0.1.0
+ * @author Tomoyuki Kashiro <kashiro@github>
  */
-Ext.define('Ext.ux.ImageGridList.view.Panel', {
+Ext.define('Ext.ux.touch.ImageGridList.view.Panel', {
 
     requires: [
-        'Ext.ux.ImageGridList.view.List'
+        'Ext.ux.touch.ImageGridList.view.List'
     ],
 
     extend: 'Ext.Panel',
@@ -106,7 +108,7 @@ Ext.define('Ext.ux.ImageGridList.view.Panel', {
 
     /**
      * render images in grid list
-     * @param {Ext.data.store} store store of Ext.ux.ImageGridList.model.Image
+     * @param {Ext.data.store} store store of Ext.ux.touch.ImageGridList.model.Image
      */
     renderImages: function(store){
         var me = this,

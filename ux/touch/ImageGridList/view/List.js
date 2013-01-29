@@ -1,13 +1,15 @@
 /**
- * List of Ext.ux.ImageGridList
+ * List of Ext.ux.touch.ImageGridList
  *
- * @class Ext.ux.ImageGridList.view.List
+ * @class Ext.ux.touch.ImageGridList.view.List
  * @extend Ext.Container
+ * @version 0.1.0
+ * @author Tomoyuki Kashiro <kashiro@github>
  */
-Ext.define('Ext.ux.ImageGridList.view.List', {
+Ext.define('Ext.ux.touch.ImageGridList.view.List', {
 
     requires: [
-        'Ext.ux.ImageGridList.view.ImageOuter'
+        'Ext.ux.touch.ImageGridList.view.ImageOuter'
     ],
 
     extend: 'Ext.Container',
@@ -22,7 +24,7 @@ Ext.define('Ext.ux.ImageGridList.view.List', {
 
         cls: 'image-grid-list',
 
-        // store of Ext.ux.model.Image
+        // store of Ext.ux.touch.model.Image
         store: undefined,
 
         // cache
@@ -88,13 +90,13 @@ Ext.define('Ext.ux.ImageGridList.view.List', {
     /**
      * create image component
      * @param {Object} conf configation of image component
-     * @param {Ext.ux.ImageGridList.model.Image} conf.model image model
+     * @param {Ext.ux.touch.ImageGridList.model.Image} conf.model image model
      * @param {String/Mixed} anim show animation property
      * @param {Number} conf.style.width image width
      * @param {Number} conf.style.height image height
      * @param {Number} conf.style.margin image margin 
      * @param {Number} conf.style.borderWidth border width
-     * @returns {Ext.ux.ImageGridList.view.ImageOuter}
+     * @returns {Ext.ux.touch.ImageGridList.view.ImageOuter}
      */
     createImg: function(conf){
         var me = this,
@@ -102,7 +104,7 @@ Ext.define('Ext.ux.ImageGridList.view.List', {
             showAnim = conf.anim,
             hidden = showAnim ? true : false,
             imgCmp = Ext.widget('image-grid-list-imageouter'),
-            img = Ext.create('Ext.ux.ImageGridList.view.Image', {
+            img = Ext.create('Ext.ux.touch.ImageGridList.view.Image', {
                 isSelectable: selectable,
                 hidden: hidden,
                 showAnimation: showAnim

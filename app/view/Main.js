@@ -2,7 +2,7 @@ Ext.define('ImageGridList.view.Main', {
     extend: 'Ext.Panel',
     xtype: 'ig-main',
     requires: [
-        'Ext.ux.ImageGridList.view.Panel',
+        'Ext.ux.touch.ImageGridList.view.Panel',
         'ImageGridList.store.Images'
     ],
     config: {
@@ -45,7 +45,7 @@ Ext.define('ImageGridList.view.Main', {
 
     /**
      * get image data
-     * @return {Ext.ImageGridList.store.Images} image store contain model override Ext.ux.ImageGridList.model.Image
+     * @return {Ext.ImageGridList.store.Images} image store contain model override Ext.ux.touch.ImageGridList.model.Image
      */
     getImageData: function(){
         var me = this,

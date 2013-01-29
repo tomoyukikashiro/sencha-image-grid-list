@@ -2,7 +2,7 @@
 Ext.Loader.setPath({
     'Ext': 'touch/src',
     'ImageGridList': 'app',
-    'Ext.ux': './ux'
+    'Ext.ux.touch': './ux/touch'
 });
 Ext.Loader.setConfig({
     disableCaching:false

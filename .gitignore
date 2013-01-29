@@ -1,4 +1,4 @@
-touch
+touch/*
 build
 config.sublime*
 project.TODO

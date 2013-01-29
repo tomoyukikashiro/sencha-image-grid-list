@@ -1,10 +1,12 @@
 /**
- * Image component of Ext.ux.ImageGridList
+ * Image component of Ext.ux.touch.ImageGridList
  *
- * @class Ext.ux.ImageGridList.view.Image
+ * @class Ext.ux.touch.ImageGridList.view.Image
  * @extends Ext.Img
+ * @version 0.1.0
+ * @author Tomoyuki Kashiro <kashiro@github>
  */
-Ext.define('Ext.ux.ImageGridList.view.Image', {
+Ext.define('Ext.ux.touch.ImageGridList.view.Image', {
 
     requires: [
     ],
@@ -17,7 +19,7 @@ Ext.define('Ext.ux.ImageGridList.view.Image', {
 
         /**
          * image model
-         * @type {Ext.ux.ImageGridList.model.Image}
+         * @type {Ext.ux.touch.ImageGridList.model.Image}
          */
         record: undefined,
 
@@ -73,7 +75,7 @@ Ext.define('Ext.ux.ImageGridList.view.Image', {
 
     /**
      * change selected flag in model
-     * @param {Ext.ux.ImageGridList.model.Image} model
+     * @param {Ext.ux.touch.ImageGridList.model.Image} model
      */
     toggleChecked: function(model){
 
