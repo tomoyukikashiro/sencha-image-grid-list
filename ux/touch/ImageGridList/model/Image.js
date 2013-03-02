@@ -5,6 +5,7 @@
  * @extends Ext.data.Model
  * @version 0.1.0
  * @author Tomoyuki Kashiro <kashiro@github>
+ * @license MIT
  */
 Ext.define('Ext.ux.touch.ImageGridList.model.Image',{
 
