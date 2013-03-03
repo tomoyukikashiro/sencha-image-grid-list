@@ -63,7 +63,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
 
     /**
      * insert image components
-     * @param {Object} conf configation of image
+     * @param {Object} conf configuration of image
      */
     addImages: function(conf){
         var me = this,
