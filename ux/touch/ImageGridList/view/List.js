@@ -144,12 +144,12 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
         var me = this,
             nameSpace = me.getUrlNameSpace().split('.'),
             data = model.data,
-            key,
-            url;
+            key = nameSpace[0],
+            url = data[key];
 
         for(var i = 0, length = nameSpace.length; i < length; i++){
             key = nameSpace[i];
-            url = data[key];
+            url = url[key];
         }
 
         return url;
