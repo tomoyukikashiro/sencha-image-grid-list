@@ -63,7 +63,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
 
     /**
      * insert image components
-     * @param {Object} conf configation of image
+     * @param {Object} conf configuration of image
      */
     addImages: function(conf){
         var me = this,
@@ -158,13 +158,17 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
         var me = this,
             nameSpace = me.getUrlNameSpace().split('.'),
             data = model.data,
-            key,
-            url;
+            key = nameSpace[0],
+            url = data[key];
 
         for(var i = 0, length = nameSpace.length; i < length; i++){
             key = nameSpace[i];
+<<<<<<< HEAD
             url = data[key];
             data = url;
+=======
+            url = url[key];
+>>>>>>> 6132716ec32d8441b2f22f4d9d0cf074f3ca205e
         }
 
         return url;
