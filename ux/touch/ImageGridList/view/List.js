@@ -95,7 +95,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
      * @param {String/Mixed} anim show animation property
      * @param {Number} conf.style.width image width
      * @param {Number} conf.style.height image height
-     * @param {Number} conf.style.margin image margin 
+     * @param {Number} conf.style.margin image margin
      * @param {Number} conf.style.borderWidth border width
      * @returns {Ext.ux.touch.ImageGridList.view.ImageOuter}
      */
@@ -144,12 +144,13 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
         var me = this,
             nameSpace = me.getUrlNameSpace().split('.'),
             data = model.data,
-            key = nameSpace[0],
-            url = data[key];
+            key,
+            url;
 
         for(var i = 0, length = nameSpace.length; i < length; i++){
             key = nameSpace[i];
-            url = url[key];
+            url = data[key];
+            data = url;
         }
 
         return url;

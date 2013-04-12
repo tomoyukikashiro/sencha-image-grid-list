@@ -2,14 +2,10 @@
 dir = File.dirname(__FILE__)
 
 # Load the sencha-touch framework automatically.
-load File.join(dir, '..', '..', 'touch', 'resources', 'themes')
+load File.join(dir, '..', 'themes')
 
 # Compass configurations
-sass_path = dir
-css_path = File.join(dir, "..", "css")
-
-# Require any additional compass plugins here.
-# images_dir = File.join(dir, "..", "images")
-images_dir = "../images"
+sass_path    = dir
+css_path     = File.join(dir, "..", "css")
+environment  = :production
 output_style = :compressed
-environment = :production
