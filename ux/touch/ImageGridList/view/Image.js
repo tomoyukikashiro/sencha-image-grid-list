@@ -72,6 +72,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.Image', {
             model = me.getRecord();
 
         me.toggleChecked(model);
+        me.fireOnselectedEvent(model);
     },
 
     /**
@@ -79,8 +80,25 @@ Ext.define('Ext.ux.touch.ImageGridList.view.Image', {
      * @param {Ext.ux.touch.ImageGridList.model.Image} model
      */
     toggleChecked: function(model){
+        var me = this,
+            selected = model.get('selected');
 
-        var selected = model.get('selected');
         model.set('selected',!selected);
+    },
+
+    /**
+     * fire event when image was selected
+     * @param {Ext.ux.touch.ImageGridList.model.Image} model
+     */
+    fireOnselectedEvent: function(model){
+        var me = this,
+            selected = model.get('selected'),
+            listCmp = me.getParent().getParent().getParent();
+
+        if(selected){
+            listCmp.fireEvent('selectTapImg', me);
+        }else{
+            listCmp.fireEvent('deselectTapImg', me);
+        }
     }
 });

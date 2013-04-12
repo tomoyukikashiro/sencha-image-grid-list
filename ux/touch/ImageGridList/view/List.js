@@ -26,7 +26,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
         cls: 'image-grid-list',
 
         // store of Ext.ux.touch.model.Image
-        store: undefined,
+        imgStore: undefined,
 
         // cache
         itemCmp: undefined,
@@ -37,6 +37,9 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
         // image can be selected
         isSelectable: false,
 
+        // selected image
+        selectedImg: undefined,
+
         items: [
             {
                 // insert image to this component
@@ -46,7 +49,9 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
         ],
 
         listeners: {
-            initialize: 'initCmp'
+            initialize: 'initCmp',
+            selectTapImg: 'onSelectTapImg',
+            deselectTapImg: 'onDeselectTapImg'
         }
     },
 
@@ -59,6 +64,40 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
 
         me.setItemCmp(itemCmp);
 
+    },
+
+    /**
+     * call when image is tapped to select
+     * @param {Ext.ux.touch.ImageGridList.view.Image} image component
+     */
+    onSelectTapImg: function(imgCmp){
+        var me = this;
+
+        if(me.getSelectedImg()){
+            me.clearSelectedFlg();
+        }
+        me.setSelectedImg(imgCmp);
+    },
+
+    /**
+     * call when image is tapped to deselect
+     * @param {Ext.ux.touch.ImageGridList.view.Image} image component
+     */
+    onDeselectTapImg: function(){
+        var me = this;
+
+        me.setSelectedImg(null);
+    },
+
+    /**
+     * relset selected flg in image model
+     */
+    clearSelectedFlg: function(){
+        var me = this,
+            selectedImg = me.getSelectedImg(),
+            model = selectedImg.getRecord();
+
+        selectedImg.toggleChecked(model);
     },
 
     /**
@@ -75,6 +114,8 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
             itemCmp = me.getItemCmp(),
             length = records.length,
             i;
+
+        me.setImgStore(conf.store);
 
         for(i = 0;i < length; i++){
             img = me.createImg({
