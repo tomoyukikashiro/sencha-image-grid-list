@@ -10,12 +10,12 @@ Ext.define('ImageGridList.model.Image', {
 	],
 
     extend: 'Ext.ux.touch.ImageGridList.model.Image',
-    
+
     config: {
        fields: [
 
        		// image url
             {name: 'url', type: 'string'},
-        ] 
+        ]
     }
 });

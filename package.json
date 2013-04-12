@@ -1,0 +1,14 @@
+{
+  "author": "tomoyuki.kashiro",
+  "name": "sencha-image-grid-list",
+  "version": "0.1.0",
+  "dependencies": {
+    "testacular": ">=0.4.0"
+  },
+  "engines" : {
+    "node" : "~0.8"
+  },
+  "scripts" : {
+    "test" : "node_modules/testacular/bin/testacular start testacular.conf.js --no-auto-watch --single-run --browsers PhantomJS"
+  }
+}

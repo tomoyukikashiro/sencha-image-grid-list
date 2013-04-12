@@ -67,6 +67,21 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
      */
     addImages: function(conf){
         var me = this,
+            images = me.createImgList(conf);
+
+        itemCmp.add(images);
+    },
+
+    /**
+     * create image component list
+     * @param {Object} conf configation of image component
+     * @param {String/Mixed} anim show animation property
+     * @param {Ext.ux.touch.ImageGridList.store.Images} conf.store image model
+     * @param {Object} conf.style image component style
+     * @return {Ext.ux.touch.ImageGridList.view.ImagesOuter.} list of imageouter
+     */
+    createImgList: function(conf){
+        var me = this,
             records = conf.store.getRange(),
             style = conf.style,
             anim = conf.anim,
@@ -84,8 +99,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
             });
             images.push(img);
         }
-
-        itemCmp.add(images);
+        return images;
     },
 
     /**
@@ -95,7 +109,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
      * @param {String/Mixed} anim show animation property
      * @param {Number} conf.style.width image width
      * @param {Number} conf.style.height image height
-     * @param {Number} conf.style.margin image margin 
+     * @param {Number} conf.style.margin image margin
      * @param {Number} conf.style.borderWidth border width
      * @returns {Ext.ux.touch.ImageGridList.view.ImageOuter}
      */
@@ -150,6 +164,7 @@ Ext.define('Ext.ux.touch.ImageGridList.view.List', {
         for(var i = 0, length = nameSpace.length; i < length; i++){
             key = nameSpace[i];
             url = data[key];
+            data = url;
         }
 
         return url;
