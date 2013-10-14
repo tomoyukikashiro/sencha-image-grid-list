@@ -18,7 +18,7 @@ describe("Test for Ext.ux.touch.ImageGridList.view.List", function() {
 
             list.initCmp();
 
-            expect(list.getItemCmp().getItemId()).toEqual('image-grid-listinner');
+            expect(list.getItemCmp().getItemId()).to.eql('image-grid-listinner');
         });
     });
 
@@ -59,8 +59,8 @@ describe("Test for Ext.ux.touch.ImageGridList.view.List", function() {
 
             images = list.createImgList(conf);
 
-            expect(images[0].$className).toEqual('Ext.ux.touch.ImageGridList.view.ImageOuter');
-            expect(images[1].$className).toEqual('Ext.ux.touch.ImageGridList.view.ImageOuter');
+            expect(images[0].$className).to.eql('Ext.ux.touch.ImageGridList.view.ImageOuter');
+            expect(images[1].$className).to.eql('Ext.ux.touch.ImageGridList.view.ImageOuter');
         });
     });
 
@@ -82,7 +82,7 @@ describe("Test for Ext.ux.touch.ImageGridList.view.List", function() {
             }),
             url = list.getUrlFromModel(model);
 
-            expect(url).toEqual('resources/images/1.jpg');
+            expect(url).to.eql('resources/images/1.jpg');
 
         });
 
@@ -98,7 +98,7 @@ describe("Test for Ext.ux.touch.ImageGridList.view.List", function() {
             }),
             url = list.getUrlFromModel(model);
 
-            expect(url).toEqual('resources/images/1.jpg');
+            expect(url).to.eql('resources/images/1.jpg');
 
         });
     });

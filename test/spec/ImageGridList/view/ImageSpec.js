@@ -20,7 +20,7 @@ describe("Test for Ext.ux.touch.ImageGridList.view.Image", function() {
 
             img.onLoadImg();
 
-            expect(spy).toHaveBeenCalled();
+            expect(spy.called).to.be.ok();
 
             spy.reset();
         });
@@ -38,7 +38,7 @@ describe("Test for Ext.ux.touch.ImageGridList.view.Image", function() {
 
             img.addSelectFunc();
 
-            expect(spy).toHaveBeenCalledWith('tap', 'onTapImg');
+            expect(spy.calledWith('tap', 'onTapImg')).to.be.ok();
 
             spy.reset();
         });
@@ -53,7 +53,7 @@ describe("Test for Ext.ux.touch.ImageGridList.view.Image", function() {
 
             img.addSelectFunc();
 
-            expect(spy).not.toHaveBeenCalled();
+            expect(spy.called).to.not.be.ok();
 
             spy.reset();
         });
@@ -72,7 +72,7 @@ describe("Test for Ext.ux.touch.ImageGridList.view.Image", function() {
 
             img.onTapImg();
 
-            expect(spy).toHaveBeenCalledWith(model);
+            expect(spy.calledWith(model)).to.be.ok();
 
             spy.reset();
         });
@@ -85,11 +85,11 @@ describe("Test for Ext.ux.touch.ImageGridList.view.Image", function() {
             var model = Ext.create(Ext.ux.touch.ImageGridList.model.Image);
             img = Ext.create('Ext.ux.touch.ImageGridList.view.Image');
 
-            expect(model.get('selected')).toBeFalsy();
+            expect(model.get('selected')).to.not.be.ok();
 
             img.toggleChecked(model);
 
-            expect(model.get('selected')).toBeTruthy();
+            expect(model.get('selected')).to.be.ok();
         });
 
         it("change model.selected from true to false", function() {
@@ -97,12 +97,12 @@ describe("Test for Ext.ux.touch.ImageGridList.view.Image", function() {
             var model = Ext.create(Ext.ux.touch.ImageGridList.model.Image);
             img = Ext.create('Ext.ux.touch.ImageGridList.view.Image');
 
-            model.set('selected', true)
-            expect(model.get('selected')).toBeTruthy();
+            model.set('selected', true);
+            expect(model.get('selected')).to.be.ok();
 
             img.toggleChecked(model);
 
-            expect(model.get('selected')).toBeFalsy();
+            expect(model.get('selected')).to.not.be.ok();
         });
     });
 });

@@ -4,3 +4,4 @@ config.sublime*
 project.TODO
 archive
 resources/sass/.sass-cache
+node_modules
