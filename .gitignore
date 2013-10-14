@@ -1,4 +1,5 @@
 touch/*
+!touch/sencha-touch-all-debug.js
 build
 config.sublime*
 project.TODO
