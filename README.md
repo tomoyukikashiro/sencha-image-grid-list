@@ -1,6 +1,8 @@
 sencha-image-grid-list
 ========================
 
+[![Build Status](https://travis-ci.org/kashiro/sencha-image-grid-list.png?branch=master)](https://travis-ci.org/kashiro/sencha-image-grid-list)
+
 
 ## Outline
 
@@ -31,7 +33,7 @@ check [here](http://kashiro.github.com/sencha-image-grid-list/)
 	> * resources/sass/_image-grid-list.scss to sass directory and import it in your app.scss
 
 2. add class path to your application
-	> check [here](http://scriptogr.am/tkashiro/post/how-to-use-senchatouch-custom-components). 
+	> check [here](http://scriptogr.am/tkashiro/post/how-to-use-senchatouch-custom-components).
 
 3. define model
 	> Define Ext.data.Model in your application extend Ext.ux.touch.ImageGridList.model.Image.
@@ -44,7 +46,7 @@ check [here](http://kashiro.github.com/sencha-image-grid-list/)
 	>	],
 	>
 	>    extend: 'Ext.ux.touch.ImageGridList.model.Image',
-	>    
+	>
 	>    config: {
 	>```
 
