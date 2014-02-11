@@ -4,3 +4,4 @@ app/build
 config.sublime*
 node_modules
 app/resources/sass/.sass-cache
+build

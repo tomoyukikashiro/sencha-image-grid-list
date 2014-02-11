@@ -16,6 +16,14 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.sqlite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.sqlite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
+  "Ext.ux": "ux",
+  "Ext.ux.ActionOverFlowMenuButton": "touch/src/ux/ActionOverFlowMenuButton.js",
+  "Ext.ux.ApplicationMenu": "touch/src/ux/ApplicationMenu.js",
+  "Ext.ux.ContextMenu": "touch/src/ux/ContextMenu.js",
+  "Ext.ux.MenuButton": "touch/src/ux/MenuButton.js",
+  "Ext.ux.TabMenuButton": "touch/src/ux/TabMenuButton.js",
+  "Ext.ux.device": "touch/src/ux/device",
+  "Ext.ux.parse": "touch/src/ux/parse",
   "ImageGridList": "app"
 });
 Ext.ClassManager.addNameAlternateMappings({
@@ -631,6 +639,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.ux.parse.Store": [],
   "Ext.ux.parse.association.Pointer": [],
   "Ext.ux.parse.association.Relation": [],
+  "Ext.ux.touch.ImageGridList.model.Image": [],
+  "Ext.ux.touch.ImageGridList.view.Image": [],
+  "Ext.ux.touch.ImageGridList.view.ImageOuter": [],
+  "Ext.ux.touch.ImageGridList.view.List": [],
+  "Ext.ux.touch.ImageGridList.view.Panel": [],
   "Ext.viewport.Android": [],
   "Ext.viewport.Default": [],
   "Ext.viewport.Ios": [],
@@ -638,6 +651,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
+  "ImageGridList.model.Image": [],
+  "ImageGridList.store.Images": [],
   "ImageGridList.view.Main": []
 });
 Ext.ClassManager.addNameAliasMappings({
@@ -1350,6 +1365,19 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.ux.parse.association.Relation": [
     "association.relation"
   ],
+  "Ext.ux.touch.ImageGridList.model.Image": [],
+  "Ext.ux.touch.ImageGridList.view.Image": [
+    "widget.image-grid-list-image"
+  ],
+  "Ext.ux.touch.ImageGridList.view.ImageOuter": [
+    "widget.image-grid-list-imageouter"
+  ],
+  "Ext.ux.touch.ImageGridList.view.List": [
+    "widget.image-grid-list"
+  ],
+  "Ext.ux.touch.ImageGridList.view.Panel": [
+    "widget.image-grid-list-panel"
+  ],
   "Ext.viewport.Android": [],
   "Ext.viewport.Default": [
     "widget.viewport"
@@ -1357,7 +1385,9 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "ImageGridList.model.Image": [],
+  "ImageGridList.store.Images": [],
   "ImageGridList.view.Main": [
-    "widget.main"
+    "widget.ig-main"
   ]
 });
