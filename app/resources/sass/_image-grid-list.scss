@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.image-grid-list-panel {
+	margin-top: 6px;
+
+	.image-grid-list-imageouter {
+		position: relative;
+		border-color : #ccc;
+		border-style : solid;
+		display: inline-block;
+		
+		.image-grid-list-image {
+			.checked {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 22px;
+				height: 22px;
+				background: inline-image('checked.png') no-repeat center center;
+				@include background-size(contain);
+			}
+		}
+	}
+}

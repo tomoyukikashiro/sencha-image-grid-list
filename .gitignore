@@ -1,8 +1,6 @@
-touch/*
-!touch/sencha-touch-all-debug.js
-build
+app/touch/*
+!app/touch/sencha-touch-all-debug.js
+app/build
 config.sublime*
-project.TODO
-archive
-resources/sass/.sass-cache
 node_modules
+app/resources/sass/.sass-cache
