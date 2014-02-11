@@ -1,16 +1,12 @@
 {
   "name": "sencha-image-grid-list",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/kashiro/sencha-image-grid-list",
   "authors": [
     "Tomoyuki Kashiro <ksrtmyk@gmail.com>"
   ],
   "description": "grid component to display some images by using sencha touch 2.",
-  "main": [
-    "app/ux/touch/ImageGridList",
-    "app/resources/images/checked.png",
-    "app/resources/sass/_image-grid-list.scss",
-  ],
+  "main": "app/ux/touch/ImageGridList/view/Panel.js",
   "keywords": [
     "senchatouch",
     "image",
