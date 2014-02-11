@@ -3,7 +3,7 @@
  *
  * @class Ext.ux.touch.ImageGridList.view.Image
  * @extends Ext.Img
- * @version 0.1.0
+ * @version 0.1.1
  * @author Tomoyuki Kashiro <kashiro@github>
  * @license MIT
  */
