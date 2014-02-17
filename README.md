@@ -28,3 +28,7 @@ grid component to display some images by using sencha touch 2
 ## How to use...
 
 see [here](http://scriptogr.am/tkashiro/post/how-to-use-custom-component-by-using-bower-in-sencha-touch)
+
+## Demo
+ 
+see [here](http://kashiro.github.io/sencha-image-grid-list/) 
