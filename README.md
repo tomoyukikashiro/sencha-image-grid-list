@@ -1,4 +1,3 @@
-
 # sencha image grid list
 
 ## Outline
@@ -17,7 +16,7 @@ grid component to display some images by using sencha touch 2
 	
 ## Screenshot
 
-![screenshot](https://pbs.twimg.com/media/BBL40gFCUAAKUX8.png:large "screenshot")
+![screenshot](http://pbs.twimg.com/media/BBL40gFCUAAKUX8.png:large "screenshot")
 
 ## Install via bower
 
